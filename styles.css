@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+body {
+    background: white;
+    color: black;
+}
+
+header {
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 25%;
+    width: 100%;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 18%;
+    transition: ease 0.4s ;
+
+}
+.logo img {
+    width: 100%;
+    height: 250px;
+}
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .4s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 /20%);
+    border-radius: 4px;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+.home {
+    padding: 350px 18%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:bottom;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0 0 0 / 54%), rgba(0 0 0 / 69%)),url(/bac.jpg);    
+}
+
+.text h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    font-family: 'Paytone One',sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.home-btn{
+    display: inline-block;
+    font-size: 18px;
+    padding: 25px 30px;
+    border: white solid;
+    background: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    transition: ease 0.40s;   
+    font-family: 'Paytone One',sans-serif;
+    margin-top: 30px;
+}
+
+.home-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+header.sticky {
+    background-color: black;
+    color: black;
+    padding: 5px 10%;
+    box-shadow: rgba(35,35,38,0.1) 0px 10px 10px -10px;
+}
+
+.text2 h2 {
+    font-size: 45px;
+    font-family: 'Paytone One',sans-serif;
+    line-height: 1.2;
+    font-weight: 350;
+    text-align: center;
+    text-shadow: 2px white;
+}
+
+.container {
+    padding: 45px 10%;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.row-items {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(250px,auto));
+    grid-gap:5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.container-box{
+    background: white;
+    border: 1px solid #f0eded;
+    height: 90%;
+    padding: 15px;
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+
+.container-img{
+    height: 100px;
+    width: 200px;
+    padding: 2px;
+    background: white;
+    border-radius: 4px;
+    max-width: 100%;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+
+.container-box h4{
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container-box p {
+    font-size: 16px;
+    color: grey;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.container-box:hover {
+    box-shadow: 5px 30px 55px rgb(55 55 55 /12%);
+    border: 1px transparent;
+    transform: translateY(-3px);
+}
+
+.about-us{
+    display: flex;
+    max-width: 100%;
+}
+
+.about {
+    flex: 50%;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-right:1px solid black;
+    border-left:1px solid black;
+}
+
+.break {
+    border: 10px solid black;
+    max-width: 100%;
+}
+
+.name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    transition: ease 0.4s;
+    text-decoration: underline;
+    font-size: 40px;
+
+}
+
+.headabout {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Paytone One',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin: 50px;
+}
+
+.profile {
+    margin-top: 50px;
+    max-height: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.text3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.about .skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .skills li {
+    display: inline-block; /* Display li elements in a row */
+    background-color: black; /* Replace with your desired background color */
+    border-radius: 20px; /* Adjust the radius to control the amount of rounding */
+    padding: 5px 10px; /* Adjust padding for better appearance */
+    margin: 10px; /* Add some space between list items */
+    color: #fff; /* Text color for better visibility */
+    font-weight: 500;
+    font-family: 'Paytone One',sans-serif;
+}
+
+/* Optional: Hover effect for the list items */
+.about .skills li:hover {
+    background-color: white; /* Replace with a darker shade of the background color */
+    cursor: pointer;
+    color: black;
+}
+
+
+.contact {
+      border-top:2px dotted white ;
+      height:500px;
+      max-height: 1500px;
+      max-width: 100%;
+      text-align: center;
+      background-color: black;
+      padding-left:100px;
+      padding-right:100px;
+}
+
+
+
+.email {
+    font-size: 18px;
+    color: white;
+    margin-top: 100px;
+    max-width: 100%;
+    font-family:'Paytone One',sans-serif;
+    font-size: 30px;
+    border: 1px solid white;
+
+}
+
+.contact h1{
+  margin-top: 30px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 35px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+.email:hover {
+    transform: scale(1.1);
+}
+
+.linkedin {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+.icons {
+    margin-top: 30px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.ic {
+    width: 50px;
+    height: 50px;
+}
+
+
+ @media (max-width:1400px){
+    header {
+        padding: 15px;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+    section {
+        transition: .2;
+        padding: 75px 15%;
+    }
+    body {
+        font-size: smaller;
+    }
+    .contact {
+      width: 100%;
+    }
+    .row-items{
+      grid-template-columns: repeat(4,minmax(200px,auto));
+      width: 700px;
+      font-size: 20px;
+      grid-gap:3rem;
+      margin-left: 10px;
+    }
+
+    .container-img {
+      width: 200px;
+      height: 150px;
+    }
+    .about-us{
+      border: 100px;
+    }
+    .about{
+      margin:40px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 25px;
+    }
+    
+} 
+
+
+
+@media (max-width:1040px){
+  #menu-icon{
+    display: block;
+  }
+  header {
+    
+    transition: .2s;
+  }
+
+  .row-items{
+    grid-template-columns: repeat(2,minmax(300px,auto));
+    width: 500px;
+    grid-gap:7.5rem;
+    }
+
+    .container-img {
+      width: 120px;
+      height: 100px;
+    }
+    .about-us{
+      border: 150px;
+    }
+    .about{
+      margin:40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 25px;
+      
+    }
+   
+
+    .stick #menu-icon{
+      background-color: black;
+      color: white;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 270px;
+      height: 120vh;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 150px 30px;
+      transition: 0.5s all;
+    }
+    .navbar a{
+      display: block;
+      margin: 1.2rem 0;
+    }
+    .sticky .navbar a{
+        color: white;
+    }
+    .navbar a:hover {
+      color: black;
+      background-color: white;
+    }
+    .open {
+      right: 0;
+    }
+
+} 
+
+@media (max-width:700px){
+  .row-items{
+      grid-template-columns: repeat(1,minmax(300px,auto));
+      width: 200px;
+      grid-gap:4rem;
+      margin-left: 100px;
+    }
+    .container-img{
+      width: 50px;
+      height: 100px;
+      margin-left: 100px;
+    }
+    .about{
+      margin-top: 10px;
+      border: none;
+      width: 50%;
+      border: 2px;
+    }
+    .profile{
+      width: 200px;
+      height: 200px;
+    }
+    .name {
+      font-size: 18px;
+    }
+    .headabout{
+      margin-bottom: 10px;
+    }
+    header {
+    
+      transition: .2s;
+    }
+
+    .text h1{
+      font-size: 35px;
+      line-height: 1.5;
+    }
+}
