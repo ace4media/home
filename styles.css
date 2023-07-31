@@ -72,7 +72,7 @@ header {
     background-position:bottom;
     grid-template-columns: repeat(1,1fr);
     align-items: center;
-    background: linear-gradient(0deg, rgba(0 0 0 / 54%), rgba(0 0 0 / 69%)),url('bac (1).jpg');    
+    background: linear-gradient(0deg, rgba(0 0 0 / 54%), rgba(0 0 0 / 69%)),url(/bac.jpg);    
 }
 
 .text h1 {
@@ -460,5 +460,122 @@ header.sticky {
     .text h1{
       font-size: 35px;
       line-height: 1.5;
+    }
+    .open {
+      right: 0;
+    }
+}
+
+@media (max-width:400px){
+  .home {
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  .break{
+    width: 1000px;
+  }
+  .row-items{
+      grid-template-columns: repeat(1,minmax(300px,auto));
+      width: 100px;
+      grid-gap:3.5rem;
+      margin-left: 20px;
+    }
+    .container-img{
+      width: 100px;
+      height: 100px;
+      margin-left: 65px;
+    }
+    .about{
+      margin-top: 10px;
+      border: none;
+      width: 100%;
+      border: 2px;
+    }
+    .about-us{
+      margin-left: 0;
+      width: 100%;
+      padding: 0;
+    }
+    .about {
+      font-size: 12px;
+    }
+    .profile{
+      width: 100px;
+      height: 100px;
+    }
+    .name {
+      margin-top: 0;
+      font-size: 12px;
+
+    }
+    .sticky .navbar a{
+      color: white;
+    }
+    .linkedin {
+      width: 15px;
+      height: 20px;
+      margin-right: 10px;
+  }
+    .headabout{
+      margin-bottom: 10px;
+    }
+    header {
+      height: 25%;
+      transition: .2s;
+      display: flex;
+      align-items: left;
+      justify-content: flex-start;
+      gap: 2px;
+      overflow: hidden;
+    } 
+  
+    .logo {
+      width: 50%;
+    }
+    .text h1{
+      font-size: 25px;
+      line-height: 1.2;
+      font-family: 'Times New Roman', Times, serif
+    }
+    .text2 h2{
+      font-size: 40px;
+      text-align: right;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: -50%;
+      width: 25%;
+      height: 100%;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      transition: 0.5s all;
+    }
+    .navbar a{
+      display: block;
+      margin: .1rem;
+      font-size: 18px;
+    }
+    .email {
+      font-size: 15px;
+      border: none;
+      text-decoration: underline;
+      margin-left: 0px;
+      padding-left: 0;
+    }
+
+    .contact{
+      width: 100%;
+      margin-left: 0;
+    }
+    .open {
+      right: 15%;
     }
 }
