@@ -11,6 +11,20 @@ body {
     color: black;
 }
 
+.text4 {
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1.2;
+  padding-top:100px;
+  padding-left: 55px;
+  padding-bottom: 50px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding-right: 55px;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
 header {
     position: fixed;
     top:0;
@@ -421,6 +435,9 @@ header.sticky {
     .open {
       right: 0;
     }
+     .text4{
+    font-size: 25px;
+  }
 
 } 
 
@@ -464,6 +481,9 @@ header.sticky {
     .open {
       right: 0;
     }
+    .text4{
+    font-size: 20px;
+  }
 }
 
 @media (max-width:500px){
@@ -578,4 +598,7 @@ header.sticky {
     .open {
       right: 15%;
     }
+    .text4{
+    font-size: 15px;
+      }
 }
